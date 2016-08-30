@@ -6,8 +6,8 @@
   <name>hello</name>
   <version>1.0</version>
   <build>
-<!--    <sourceDirectory>.</sourceDirectory>
-    <outputDirectory>/opt/IBM/UCBuild/agent/var/work/job/152/helloworld/dist/</outputDirectory> -->
+  <sourceDirectory>src</sourceDirectory>
+<!--      <outputDirectory>/opt/IBM/UCBuild/agent/var/work/job/152/helloworld/dist/</outputDirectory> -->
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
