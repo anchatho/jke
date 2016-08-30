@@ -1,12 +1,13 @@
 <project>
   <modelVersion>4.0.0</modelVersion>
   <groupId>Urbancode</groupId>
-  <artifactId>hello.war</artifactId>
+  <artifactId>hello</artifactId>
+  <packaging>war</packaging>
   <name>hello</name>
   <version>1.0</version>
   <build>
-    <sourceDirectory>.</sourceDirectory>
-    <outputDirectory>/opt/IBM/UCBuild/agent/var/work/job/152/helloworld/dist/</outputDirectory>
+<!--    <sourceDirectory>.</sourceDirectory>
+    <outputDirectory>/opt/IBM/UCBuild/agent/var/work/job/152/helloworld/dist/</outputDirectory> -->
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -19,10 +20,20 @@
           </excludes>
         </configuration>
       </plugin>
+      <plugins>
+
+      <plugin>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>2.6</version>
+        <configuration>
+          <warSourceDirectory>web</warSourceDirectory>
+          <failOnMissingWebXml>false</failOnMissingWebXml>
+        </configuration>
+      </plugin>
     </plugins>
   </build>
-  <properties>
+  <!--<properties>
     <sonar.host.url>http://ind2bzr0109.in.ibm.com:9000/</sonar.host.url>
     <sonar.dynamicAnalysis>false</sonar.dynamicAnalysis>
-  </properties>
+  </properties>-->
 </project>
