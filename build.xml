@@ -1,5 +1,5 @@
 <?xml version="1.0"?> 
-<project name="build.xml" default="dist" basedir=".">
+<project name="build.xml" default="dist" basedir="."> 
   <!-- Define the properties used by the build -->
   <property name="app.name"      value="hello"/>
   <property file="/home/helloworld/build.properties"/>
